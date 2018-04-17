@@ -1,10 +1,12 @@
+package io.swagger.api;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mockrunner.mock.web.MockHttpServletRequest;
 import io.swagger.api.ListuserApiController;
 import io.swagger.model.Userinfo;
+import org.junit.Assert;
+import org.junit.Test;
 import org.springframework.http.ResponseEntity;
-import org.testng.Assert;
-import org.testng.annotations.Test;
 
 public class TestListuserApiController {
 
@@ -24,5 +26,6 @@ public class TestListuserApiController {
         Userinfo ui = re.getBody();
         Assert.assertNotEquals(ui, null);
         Assert.assertEquals((int)ui.getAge(),123);
+        System.out.println("this test is ok tooooooooooooooo!");
     }
 }

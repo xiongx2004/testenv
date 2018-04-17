@@ -1,12 +1,14 @@
+package io.swagger.api;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mockrunner.mock.web.MockHttpServletRequest;
 import io.swagger.api.AdduserApiController;
 import io.swagger.model.Adduserinfo;
 import io.swagger.model.ModelDefault;
 import io.swagger.model.Userinfo;
+import org.junit.Assert;
+import org.junit.Test;
 import org.springframework.http.ResponseEntity;
-import org.testng.Assert;
-import org.testng.annotations.Test;
 
 public class TestAdduserApiController {
 
